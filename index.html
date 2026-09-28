@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ma ToDo</title>
+</head>
+<body>
+    <!-- le side bar gauche  -->
+    <header class="sidebar-left">
+        <section class="logo">
+            <img src="logo.png" alt="logo">
+            <h1>Ma ToDo</h1>
+        </section>
+
+        <hr>
+
+        <section class="profil">
+            <section class="profil-card child">
+                <img src="enfant-avatar.png" alt="avatar d'enfant">
+                <div>
+                    <h2>Enfant</h2>
+                    <h3>5 - 12ans</h3>
+                </div>
+            </section>
+            
+            <section class="profil-card adult">
+                <img src="adult-avatar.png" alt="avatar d'adulte">
+                <div>
+                    <h2>Adult</h2>
+                    <h3>13ans +</h3>
+                </div>
+            </section>
+        </section>
+        
+        <hr>
+
+        <nav class="menu">
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Mes taches</li>
+                <li><i class="fa-solid fa-chart-pie"></i> Statistiques</li>
+                <li><i class="fa-solid fa-gear"></i> Paramètres</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="topbar">
+            <section class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Rechercher une tâche ...</p>
+            </section>
+
+            <section class="date">
+                <i class="fa-regular fa-calendar"></i>
+                <p>lundi 28 septembre 2026</p>
+            </section>
+        </section>
+        
+        <section class="container">
+            <section class="tasks-container">
+                <h2>Hi! there,</h2>
+                <h3>Quelles tâches veux-tu accomplir aujourd'hui ?</h3>
+                <section class="tasks">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore adipisci cupiditate corporis sed excepturi accusamus esse laboriosam. Excepturi ducimus exercitationem, debitis, sit quis ipsam explicabo fuga quisquam autem eius minima dicta ipsum quam rerum voluptates, possimus error doloribus obcaecati! Aliquam tempore nobis veritatis saepe natus ex praesentium delectus, totam modi quia libero quos? Facere perspiciatis minus, commodi facilis incidunt amet minima repudiandae, quaerat atque fuga, veritatis numquam nihil ipsa deleniti fugiat. Debitis totam vitae ab adipisci quos consequuntur, harum soluta, eius perferendis illo alias incidunt facere rem dolor. Rem similique, soluta aspernatur sint ea repellendus quos cumque debitis, veniam voluptatibus quam, aliquam quaerat porro sit explicabo labore ex exercitationem. Earum officia, vel odit aspernatur, aliquid distinctio accusantium expedita placeat mollitia fuga, quisquam alias fugiat. Enim ad assumenda voluptatibus necessitatibus. Culpa, natus cum quasi maxime expedita officia temporibus consequatur maiores aperiam illum quam doloribus laboriosam quod amet alias, accusamus odit quibusdam repellendus ipsum possimus? At culpa ducimus qui odit magnam quae ratione rem tempore fuga laudantium. Modi at magni adipisci. Doloremque vero, numquam maxime assumenda consectetur ipsum eligendi id sunt soluta dolore. Aliquid vitae minima eum unde! Voluptate magnam eligendi deleniti, repellat quibusdam hic, velit consectetur distinctio earum voluptatibus vitae dignissimos?</p>
+                    <section class="task">
+                        <input type="checkbox" name="task" id="task1">
+                        <img src="" alt="illustration de la tâche">
+                        <div>
+                            <label for="task1">Faire les courses</label>
+                            <p><i class="fa-regular fa-calendar"></i> aujourd'hui</p>
+                        </div>
+                        <p>Ecole</p>
+                        <p>Normal</p>
+                        <i class="fa-solid fa-trash"></i>
+                    </section>
+                    <section class="task">
+                        <input type="checkbox" name="task" id="task1">
+                        <img src="" alt="illustration de la tâche">
+                        <div>
+                            <label for="task1">Faire les courses</label>
+                            <p><i class="fa-regular fa-calendar"></i> aujourd'hui</p>
+                        </div>
+                        <p>Ecole</p>
+                        <p>Normal</p>
+                        <i class="fa-solid fa-trash"></i>
+                    </section>
+
+                    <section class="task">
+                        <input type="checkbox" name="task" id="task1">
+                        <img src="" alt="illustration de la tâche">
+                        <div>
+                            <label for="task1">Jouer 30 minutes</label>
+                            <p><i class="fa-regular fa-calendar"></i> aujourd'hui</p>
+                        </div>
+                        <p>Ecole</p>
+                        <p>Normal</p>
+                        <i class="fa-solid fa-trash"></i>
+                    </section>
+
+                    <section class="task">
+                        <input type="checkbox" name="task" id="task1">
+                        <img src="" alt="illustration de la tâche">
+                        <div>
+                            <label for="task1">Ranger ma chambre</label>
+                            <p><i class="fa-regular fa-calendar"></i> aujourd'hui</p>
+                        </div>
+                        <p>Ecole</p>
+                        <p>Normal</p>
+                        <i class="fa-solid fa-trash"></i>
+                    </section>
+                </section>
+            </section>
+            <section class="sidebar-right">
+                <h2>Nouvelle tâche</h2>
+                <form action="">
+                    <label for="task-name">Titre de la tache</label> 
+                    <br>
+                    <input type="text" name="task-name" id="task-name" placeholder="Ex : Faire les courses">
+
+                    <br>
+                    <br>
+                    
+                    <label for="date">Date</label>
+                    <br>
+                    <input type="date" name="date" id="date">
+
+                    <br>
+                    <br>
+
+                    <label for="priority">Priorité</label>
+                    <br>
+                    <select name="priority" id="priority">
+                        <option value="low">Basse</option>
+                        <option value="medium">Moyenne</option>
+                        <option value="high">Haute</option>
+                    </select>
+
+                    <br>
+                    <br>
+                    
+                    <label for="category">Catégorie</label>
+                    <br>
+                    <select name="category" id="category">
+                        <option value="personal">Personnel</option>
+                        <option value="work">Travail</option>
+                        <option value="school">École</option>
+                        <option value="home">Maison</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <button type="reset">Annuler</button>
+                    <button type="submit">Ajouter la tâche</button>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
