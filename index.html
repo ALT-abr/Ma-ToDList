@@ -120,26 +120,26 @@
             </section>
  
             <!-- ----------------------------------------------- le formulaire ------------------------------------------------------------------- -->
-            <section class="sidebar-right">
+            <section class="sidebar-right" id="list">
                 <h2>Nouvelle tâche</h2>
                 <form action="">
                     <label for="task-name">Titre de la tache</label> 
                     <br>
-                    <input type="text" name="task-name" id="task-name" placeholder="Ex : Faire les courses">
+                    <input type="text" name="task-name" id="nom_tache" placeholder="Ex : Faire les courses">
 
                     <br>
                     <br>
                     
                     <label for="date">Date</label>
                     <br>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date_tache">
 
                     <br>
                     <br>
 
                     <label for="priority">Priorité</label>
                     <br>
-                    <select name="priority" id="priority">
+                    <select name="priority" id="priorite_tache">
                         <option value="low">Basse</option>
                         <option value="medium">Moyenne</option>
                         <option value="high">Haute</option>
@@ -150,7 +150,7 @@
                     
                     <label for="category">Catégorie</label>
                     <br>
-                    <select name="category" id="category">
+                    <select name="category" id="categorie_tache">
                         <option value="personal">Personnel</option>
                         <option value="work">Travail</option>
                         <option value="school">École</option>
@@ -161,7 +161,7 @@
                     <br>
 
                     <button type="reset">Annuler</button>
-                    <button type="submit">Ajouter la tâche</button>
+                    <button type="submit" id="bouton_valider">Ajouter la tâche</button>
                 </form>
             </section>
         </section>
