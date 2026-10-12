@@ -94,6 +94,68 @@
               margin-bottom: 15px;
             }
         }
+
+        /* Présentation de la page de démonstration */
+        * { box-sizing: border-box; }
+
+        body {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: clamp(16px, 4vw, 40px);
+            color: #20243a;
+            background: #f4f6fb;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.55;
+        }
+
+        .container {
+            gap: 10px;
+            padding: 10px;
+            border: 1px solid #e5e8f0;
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(38, 45, 83, .07);
+        }
+
+        .block1, .block2, .block3, .block4, .block5,
+        .block6, .block7, .block8, .block9 {
+            min-height: 76px;
+            display: grid;
+            place-items: center;
+            border: 1px solid #e2e1f6;
+            border-radius: 10px;
+            color: #5144c4;
+            background: #f0efff;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .table-section-block, .table-section-media {
+            margin-top: 28px;
+            overflow: hidden;
+            border: 1px solid #e3e6ef;
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0 8px 22px rgba(38, 45, 83, .05);
+        }
+
+        .table-section-block { overflow-x: auto; }
+        .table-section-block table, .table-section-media table { border: 0; }
+        .table-section-block td, .table-section-media td {
+            padding: 16px;
+            border: 1px solid #e5e8f0;
+            color: #51576b;
+            background: #fff;
+            vertical-align: top;
+        }
+        .table-section-block tr:nth-child(even) td,
+        .table-section-media tr:nth-child(even) td { background: #f8f9fc; }
+
+        @media (max-width: 600px) {
+            .container { grid-template-areas: none; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .block1, .block2, .block3, .block4, .block5,
+            .block6, .block7, .block8, .block9 { grid-area: auto; }
+        }
         </style>
 </head>
 <body>
